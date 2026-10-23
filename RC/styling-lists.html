@@ -1,98 +1,139 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="en-us">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
-    <title>Styling lists</title>
+    <title>Programming GOld</title>
     <style>
-      /* General styles */
+      /* General page styles */
 
       html {
-        font-family: Helvetica, Arial, sans-serif;
+        font-family: "Helvetica", Arial, sans-serif;
         font-size: 10px;
       }
 
+      body {
+        background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+        color: white;
+        min-height: 100vh;
+        padding: 40px;
+      }
+
+      /* Main Headings*/
+
       h2 {
-        font-size: 2rem;
+        font-size: 3rem;
+        text-align: center;
+        color: gold;
+        text-shadow: 0 0 15px gold;
       }
 
-      ul,ol,dl,p {
-        font-size: 1.5rem;
+      /* Paragraph Text*/
+
+      p {
+        font-size: 1.6rem;
+        text-align: center;
       }
 
-      li, p {
-        line-height: 1.5;
+      /* All Lists*/
+
+      ul, ol, dl {
+        width: 60%;
+        margin: 30px auto;
+        padding: 25px;
+
+        background: rgba(255, 255, 255, 0.1);
+
+        border-radius: 20px;
+
+        backdrop-filter: blur(10px);
+
+        box-shadow: 0 0 20px rgba(225, 215, 0, 0.3);
       }
 
-      /* Unordered list styles */
+      /* List Items*/
 
-      ul {
-        padding-left: 2rem;
-        list-style-type: none;
+      li {
+        font-size: 1.8rem;
+        margin: 15px;
+        padding: 15px;
+        background: rgba(255,255,255,0.15);
+        border-radius: 15 px;
+        transition: 0.3s;
       }
 
-      ul li {
-        padding-left: 2rem;
-        background-image: url(star.svg);
-        background-position: 0 0;
-        background-size: 1.6rem 1.6rem;
-        background-repeat: no-repeat;
+      /* Hover Effect*/
+
+      li:hover {
+        transform: translateX(20px);
+        background: gold;
+        color: black;
+        cursor: pointer;
       }
 
-      /* Ordered list styles */
+      /* Ordered Lists */
 
       ol {
         list-style-type: upper-roman;
       }
 
-      /* Description list styles */
-
-      dd, dt {
-        line-height: 1.5;
-      }
+      /*Description Lists */
 
       dt {
+        font-size: 2rem;
         font-weight: bold;
+        color: #ffd700;
+      }
+
+      dd {
+        font-size: 1.6rem;
+        margin-bottom: 20px;
       }
 
     </style>
   </head>
   <body>
-    <h2>Shopping (unordered) list</h2>
-
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
-
-    <ul>
-      <li>Humous</li>
-      <li>Pitta</li>
-      <li>Green salad</li>
-      <li>Halloumi</li>
-    </ul>
-
-    <h2>Recipe (ordered) list</h2>
-
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
-
-    <ol start="4">
-      <li>Toast pitta, leave to cool, then slice down the edge.</li>
-      <li>Fry the halloumi in a shallow, non-stick pan, until browned on both sides.</li>
-      <li>Wash and chop the salad.</li>
-      <li>Fill pitta with salad, humous, and fried halloumi.</li>
+    
+    <h2>💻 Programming Languages Hall of Fame</h2>
+    <p>
+     A collection of languages that shaped the world of technology.
+    </p>
+    
+    <h2>Favourite Languages</h2>
+    
+     <ul>
+      <li>🐍 Python — AI, machine learning and automation</li>
+      <li>⚙️ C++ — High performance computing and games</li>
+      <li>🌐 HTML/CSS — Creating beautiful websites</li>
+      <li>☕ Java — Enterprise software and Android apps</li>
+     </ul>
+     
+    <h2>Programming Journey</h2>
+    
+    <ol>
+      <li>Learn the fundamentals</li>
+      <li>Build projects</li>
+      <li>Debug endlessly</li>
+      <li>Create something amazing</li>
     </ol>
-
-    <h2>Ingredient description list</h2>
-
-    <p>Paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference, paragraph for reference.</p>
-
+  
+    <h2>Language Dictionary</h2>
+    
     <dl>
-      <dt>Humous</dt>
-      <dd>A thick dip/sauce generally made from chick peas blended with tahini, lemon juice, salt, garlic, and other ingredients.</dd>
-      <dt>Pitta</dt>
-      <dd>A soft, slightly leavened flatbread.</dd>
-      <dt>Halloumi</dt>
-      <dd>A semi-hard, unripened, brined cheese with a higher-than-usual melting point, usually made from goat/sheep milk.</dd>
-      <dt>Green salad</dt>
-      <dd>That green healthy stuff that many of us just use to garnish kebabs.</dd>
+      <dt>Python</dt>
+      <dd>
+        Simple syntax and extremely powerful for modern computing.
+       </dd>
+      
+      <dt>C++</dt>
+      <dd>
+        A fast language used when performance matters.
+      </dd>
+      
+      <dt>HTML/CSS</dt>
+      <dd>
+        The foundation of every website.
+      </dd>
     </dl>
 
 
